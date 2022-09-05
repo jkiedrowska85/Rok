@@ -7,12 +7,7 @@ namespace Rok
         {
             int i = Convert.ToInt32(Console.ReadLine());
 
-            if (i % 4 == 0)
-            {
-                Console.WriteLine("Rok przestępny");
-            }
-            else
-            if (i % 100 == 0 && i <= 100 )
+            if (i % 4 == 0 && i % 100 == 1 && i <= 100)
             {
                 Console.WriteLine("Rok przestępny");
             }
